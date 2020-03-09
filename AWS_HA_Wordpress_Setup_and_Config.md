@@ -3,9 +3,9 @@
 /* ****************** PLAN ***************** */
 
 
-  * Create an S3 bucket for Code
-  * Create an S3 bucket for Media
-  * Create a Cloudfront Distribution
+  * Create an S3 bucket for Code with default settings
+  * Create an S3 bucket for Media with default settings
+  * Create a Cloudfront Distribution to source Media bucket with default settings. 
   * Create a WEBDMZ security group that is open to the world
   * Create a RDS security group that is open to your WEBDMZ security group
     on the the MySQL port.
