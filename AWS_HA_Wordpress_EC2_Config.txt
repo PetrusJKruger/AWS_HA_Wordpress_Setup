@@ -36,21 +36,41 @@ In the terminal window:
  * service httpd restart #to restart apache just in case it needs a kickstart to pick up changes
  * change bucket policy for media s3 bucket
   * {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": [
-        "s3:GetObject"
-        ],
-      "Resource": [
-        "arn:aws:s3:::BUCKET_NAME/*"
-        ]
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "PublicReadGetObject",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": [
+            "s3:GetObject"
+            ],
+          "Resource": [
+            "arn:aws:s3:::BUCKET_NAME/*"
+            ]
+        }
+      ]
     }
-  ]
-}
- 
- 
- 
+ * Change the ARN
+ * You may need to edit your public access settings
+ * It may take an hour or two for Cloudfront to propogate
+ * Create Application Load Balancer
+   * Setup with usual
+   * Put in all availability zones
+   * Put in WEBDMZ SG
+   * Health check is "healthy.html"
+   * Healthy Threshold to 2
+   * Unhealthy Threshold to 3
+   * Timeout to 5 seconds
+   * Interval = 6 seconds
+   * Success code = 200
+   
+  # Point to domain in Route-53
+  * Chose domain
+  * Create Record Set
+  * Leave name as naked domain name
+  * Select an alias = application load balancer
+  
+  # Place EC2 instances in target group
+  
+  
