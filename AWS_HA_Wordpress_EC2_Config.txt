@@ -6,4 +6,8 @@ For your wordpress site, you'll need to configure your EC2 instances with the fo
   * service httpd start
 * Navigate to ip address
 * Do Wordpress Setup
-  * Use your RDS instances for the database host
+  * Use your RDS instances endpoint for the database host
+  * Create the wp-config,php file using the terminal
+  * If this process hangs, your security group is probably blocking port 3306
+  * Complete Setup
+* Login to WP
