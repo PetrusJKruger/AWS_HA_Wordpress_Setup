@@ -1,0 +1,9 @@
+For your wordpress site, you'll need to configure your EC2 instances with the following steps:
+
+* SSH into your EC2 instance
+* Check that the appache service is running.
+  * service httpd status
+  * service httpd start
+* Navigate to ip address
+* Do Wordpress Setup
+  * Use your RDS instances for the database host
