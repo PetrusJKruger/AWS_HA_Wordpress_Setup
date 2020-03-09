@@ -1,4 +1,27 @@
-For your wordpress site, you'll need to configure your EC2 instances with the following steps:
+# Create a Highly Available Wordpress Site
+
+/* ****************** PLAN ***************** */
+
+
+  * Create an S3 bucket for Code
+  * Create an S3 bucket for Media
+  * Create a Cloudfront Distribution
+  * Create a WEBDMZ security group that is open to the world
+  * Create a RDS security group that is open to your WEBDMZ security group
+    on the the MySQL port.
+  * Create RDS instance
+    * MySQL
+    * Include a Multi AZ instance
+    * Use burstable class T2 Micro
+    * Do not make it publicly accessible
+    * Add to RDS Security group
+    * Add DB name in Additional Information section to ensure a DB is created
+  * Setup a role to allow access to S3 for EC2
+  * Provision EC2 instance with S3 for EC2 role
+    * Add to WEBDMZ security group
+
+
+# For your wordpress site, you'll need to configure your EC2 instances with the following steps:
 
 * SSH into your EC2 instance
 * Check that the appache service is running.
