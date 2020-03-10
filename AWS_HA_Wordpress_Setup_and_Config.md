@@ -97,4 +97,6 @@ In the terminal window:
   ## Place EC2 instances in target group
   *  Place EC2 instances in the target group of your ELB.
   
-  
+  ### Explaination Source
+  A Cloud Guru AWS Solutions Architect - Associate Course
+  https://www.udemy.com/course/aws-certified-solutions-architect-associate/learn/lecture/13887862#overview
