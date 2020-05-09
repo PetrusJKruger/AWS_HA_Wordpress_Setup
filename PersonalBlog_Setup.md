@@ -3,4 +3,7 @@ The following resources were most helpful:
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2.html
 * https://www.tecmint.com/install-wordpress-on-ubuntu-16-04-with-lamp/
 * https://wordpress.org/support/article/changing-the-site-url/#changing-the-htaccess-file
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
+
+## Important Commands
 
