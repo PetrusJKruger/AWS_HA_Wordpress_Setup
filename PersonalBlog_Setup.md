@@ -5,5 +5,7 @@ The following resources were most helpful:
 * https://wordpress.org/support/article/changing-the-site-url/#changing-the-htaccess-file
 * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hosting-wordpress.html
 
+### FTP to AWS - and it worked first time
+* https://forums.aws.amazon.com/thread.jspa?messageID=450265
 ## Important Commands
 
