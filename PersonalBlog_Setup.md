@@ -9,3 +9,11 @@ The following resources were most helpful:
 * https://forums.aws.amazon.com/thread.jspa?messageID=450265
 ## Important Commands
 
+
+### Some Notes
+
+* I wasn't too careful about my db setups and may have left my setup on localhost db instead of wp-petruskruger
+* The AMI I stored worked great for launching a new instance of different tier.
+
+## Choosing an EC2 Instance
+https://aws.amazon.com/ec2/instance-types/t3/
