@@ -17,3 +17,5 @@ The following resources were most helpful:
 
 ## Choosing an EC2 Instance
 https://aws.amazon.com/ec2/instance-types/t3/
+* My t3.nano instance seems to be crashing the DB constantly. It may be that I exhausted the burst capacity.
+* I should test again a little later.
