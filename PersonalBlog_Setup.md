@@ -9,6 +9,8 @@ The following resources were most helpful:
 * https://forums.aws.amazon.com/thread.jspa?messageID=450265
 ## Important Commands
 
+## Route53 Setup
+* https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html
 
 ### Some Notes
 
